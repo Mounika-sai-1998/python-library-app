@@ -10,7 +10,7 @@ services:
       - mynetwork  
 
 
-  auth:
+  auth_service:
     image: mounikaaarepu/pyapp:auth_image
     deploy:
       replicas: 1
@@ -22,7 +22,7 @@ services:
       - database
 
 
-  book:
+  book_service:
     image: mounikaaarepu/pyapp:book_image
     deploy:
       replicas: 1
@@ -34,7 +34,7 @@ services:
       - database
 
 
-  borrow:
+  borrow_service:
     image: mounikaaarepu/pyapp:borrow_image
     deploy:
       replicas: 1

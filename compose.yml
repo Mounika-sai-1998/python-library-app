@@ -51,6 +51,8 @@ services:
       replicas: 1
     ports:
       - "5000:5000"
+    networks:
+      - mynetwork
     depends_on:
       - auth
       - book

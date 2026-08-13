@@ -1,7 +1,7 @@
 ---
 services:
   database:
-    image: mounikaaarepu/pyapp:database_image
+    image: mounikaaarepu/pyrepo:db_image
     deploy:
       replicas: 1
     ports:
@@ -11,7 +11,7 @@ services:
 
 
   auth_service:
-    image: mounikaaarepu/pyapp:auth_image
+    image: mounikaaarepu/pyrepo:auth_image
     deploy:
       replicas: 1
     ports:
@@ -35,7 +35,7 @@ services:
 
 
   borrow_service:
-    image: mounikaaarepu/pyapp:borrow_image
+    image: mounikaaarepu/pyrepo:borrow_image
     deploy:
       replicas: 1
     ports:
@@ -46,7 +46,7 @@ services:
       - database
 
   frontend:
-    image: mounikaaarepu/pyapp:frontend
+    image: mounikaaarepu/pyrepo:frontend_image
     deploy:
       replicas: 1
     ports:

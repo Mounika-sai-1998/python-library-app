@@ -1,6 +1,6 @@
 ---
 services:
-  database:
+  db:
     image: mounikaaarepu/pyrepo:db_image
     deploy:
       replicas: 1
